@@ -45,16 +45,20 @@ buttonGenera.addEventListener('click', event => {
         prezzo *= 0.6;
     }
     var totale = document.getElementById('totale');
-    totale.innerHTML ='costo biglietto Euro ' + prezzo.toFixed(2);
+    totale.innerHTML = prezzo.toFixed(2) + ' Euro';
 
+    var nomeU = document.getElementById('nomeU');
+    nomeU.innerHTML = nome;
 
+    var offerta = document.getElementById('fascia_eta');
+    offerta.innerHTML = fasciaEta;
 });
 
 
 var buttonAnnulla = document.getElementById('annulla');
 
 buttonAnnulla.addEventListener('click', event => {
-    alert ('ciao annulla');
+    alert ('Lo devo ancora fare');
 
 
 

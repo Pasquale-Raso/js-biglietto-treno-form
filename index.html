@@ -14,19 +14,19 @@
         <div class="inserimento_dati">
             <!-- NOME -->
             <div class="box">
-                <div> Nome Cognome</div>
+                <div class="apici"> Nome Cognome</div>
                 <label for="nome_passeggero"></label>
-                <input type="text" class="box_nome_passeggero" id="nome">
+                <input type="text" class="box_passeggero" id="nome">
             </div>
             <!-- KM -->
             <div class="box2">
-                <div> Km da percorrere</div>
+                <div class="apici"> Km da percorrere</div>
                 <label for="Km_da_percorrere"></label>
                 <input type="text" class="box_Km_da_percorrere" id="km">
             </div>
             <!-- FASCIA ETA -->
             <div class="box">
-                <div> Fasci di età</div>
+                <div class="apici"> Fasci di età</div>
                 <label for="fascia_di_età"></label>
                 <select class="box_fascia_di_età" id="fascia_eta">
                     <option value="minorenne">Minorenne</option>
@@ -44,8 +44,34 @@
 
         <!-- BIGLIETTO -->
         <h1 class="titolo_biglietto" >IL TUO BIGLIETTO</h1>
+        
         <div class="biglietto_dati">
-            <div id="totale"></div>
+            <div class="Dettaglio_Passeggeri"> <strong>DETTAGLIO PASSEGGERI</strong></div>
+            <hr>
+            <div class="big_box">
+                <div class="box_nome_passeggero">
+                    <div>NOME PASSEGGERO</div>
+                    <div id="nomeU"></div>
+                </div>
+                <div class="box_offerta">
+                    <div>Offerta</div>
+                    <div></div>
+            </div> 
+                <div class="box_carrozza">
+                    <div>Carrozza</div>
+                    <div></div>
+            </div>
+                <div class="box_codice_cp">
+                    <div>Codice CP</div>
+                    <div></div>
+            </div>
+                <div class="box_costo_biglietto">
+                    <div>Costo Biglietto</div>
+                    <div id="totale"></div>
+                </div>
+            </div>
+            <hr>
+            
 
 
         </div>

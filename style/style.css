@@ -22,14 +22,21 @@ body {
     height: 200px;
     margin-top: 20px;
     text-align: center;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
+}
+.biglietto_dati{
+    text-align: left;
 }
 
  /* <!-- CALCOLO --> */
 .titolo_calcolo {
     color: white;
     text-align: center;
+}
+.apici{
+    color: brown;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 .box{
     display: inline-block;
@@ -53,3 +60,29 @@ body {
     padding-bottom: 20px;
     text-align: center;
 } 
+.Dettaglio_Passeggeri{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.big_box {
+    text-align: left;  
+}
+
+.box_nome_passeggero{
+    background-color: gray;
+    padding: 50px;
+    display: inline-block;
+    
+}
+
+.box_offerta, .box_carrozza, .box_codice_cp, .box_costo_biglietto {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 40px;
+    margin-top: 40px;
+}
+#totale{
+    margin-top: 30px;
+}
