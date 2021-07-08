@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- CALCOLO -->
+        <h1 class="titolo_calcolo" >CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="inserimento_dati">
+            <!-- NOME -->
+            <div class="box">
+                <div> Nome Cognome</div>
+                <label for="nome_passeggero"></label>
+                <input type="text" class="box_nome_passeggero" id="nome">
+            </div>
+            <!-- KM -->
+            <div class="box2">
+                <div> Km da percorrere</div>
+                <label for="Km_da_percorrere"></label>
+                <input type="text" class="box_Km_da_percorrere" id="km">
+            </div>
+            <!-- FASCIA ETA -->
+            <div class="box">
+                <div> Fasci di età</div>
+                <label for="fascia_di_età"></label>
+                <select class="box_fascia_di_età" id="fascia_eta">
+                    <option value="minorenne">Minorenne</option>
+                    <option selected value="maggiorenne">Maggiorenne</option>
+                    <option value="over_65">Over 65</option>
+                </select>
+            </div>
+            <!-- BOTTONI -->
+            <div>
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+        </div>
+
+
+        <!-- BIGLIETTO -->
+        <h1 class="titolo_biglietto" >IL TUO BIGLIETTO</h1>
+        <div class="biglietto_dati">
+            <div id="totale"></div>
+
+
+        </div>
+    </div>
+
+
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
