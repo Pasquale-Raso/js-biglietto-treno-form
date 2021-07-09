@@ -31,37 +31,56 @@ Nascondiamo la sezione del biglietto se non è ancora stato generato il bigliett
 Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali. */
 
 var buttonGenera = document.getElementById('genera');
-
 buttonGenera.addEventListener('click', event => {
     var nome = document.getElementById('nome').value;
     var km = document.getElementById('km').value;
     var fasciaEta = document.getElementById('fascia_eta').value;
+    
+
     var prezzo = 0.21 * km;
 
     if (fasciaEta === 'minorenne' ){
         prezzo *= 0.8;
-    }
-    else if (fasciaEta === 'over_65' ){
+    } else if (fasciaEta === 'over_65' ){
         prezzo *= 0.6;
     }
+
+    
+    var nCarrozza = document.getElementById('numero_carrozza');
+    var nCarrozza = Math.floor(Math.random()*12) + 1;
+    numero_carrozza.innerHTML = nCarrozza;
+
+    var nCp = document.getElementById('codice_cp');
+    var nCp = Math.floor(Math.random()*1000) + 1;
+    codice_cp.innerHTML = ('TI ') + nCp;
+
+
     var totale = document.getElementById('totale');
     totale.innerHTML = prezzo.toFixed(2) + ' Euro';
 
     var nomeU = document.getElementById('nomeU');
     nomeU.innerHTML = nome;
 
-    var offerta = document.getElementById('fascia_eta');
-    offerta.innerHTML = fasciaEta;
+    var offertaMMO = document.getElementById('offerta');
+    offertaMMO.innerHTML = fasciaEta;
+
+
 });
 
 
 var buttonAnnulla = document.getElementById('annulla');
-
 buttonAnnulla.addEventListener('click', event => {
-    alert ('Lo devo ancora fare');
-
-
-
+    
+    nome.value = ' ';
+    km.value = ' ';
+    numero_carrozza.value = ' ';
+    
+    codice_cp.innerHTML = ' ';
+    totale.innerHTML = ' ';
+    nomeU.innerHTML = ' ';
+    offerta.innerHTML = ' ';
+    numero_carrozza.innerHTML = ' ';
+    
 
     
 });

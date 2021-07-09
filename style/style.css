@@ -19,10 +19,10 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 3px 3px 3px #000000;
-    height: 200px;
     margin-top: 20px;
     text-align: center;
-    padding-top: 20px;  
+    padding-top: 20px; 
+    padding-bottom: 20px;  
 }
 .biglietto_dati{
     text-align: left;
@@ -71,8 +71,9 @@ body {
 
 .box_nome_passeggero{
     background-color: gray;
-    padding: 50px;
+    padding: 20px;
     display: inline-block;
+    vertical-align: middle;
     
 }
 
@@ -80,9 +81,15 @@ body {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    margin: 40px;
-    margin-top: 40px;
+    width: 15%;
 }
-#totale{
-    margin-top: 30px;
+
+#totale, #codice_cp, #numero_carrozza, #offerta, #nomeU  {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+hr{
+    width: 70%;
+    margin: 0 auto;
 }
